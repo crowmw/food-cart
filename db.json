@@ -1,0 +1,47 @@
+{
+  "categories": [
+    {
+      "id": "pizza",
+      "index": 0,
+      "name": "Pizza",
+      "dishes": ["margherita", "funghi", "capriciosa"]
+    },
+    { "id": "sosy", "index": 1, "name": "Sosy" },
+    { "id": "przystawki", "index": 2, "name": "Przystawki" },
+    { "id": "zestawy-obiadowe", "index": 3, "name": "Zestawy obiadowe" },
+    { "id": "fast-food", "index": 4, "name": "Fast food" },
+    { "id": "spaghetti", "index": 5, "name": "Spaghetti" },
+    { "id": "salatki", "index": 6, "name": "Sałatki" },
+    { "id": "napoje", "index": 7, "name": "Napoje" }
+  ],
+  "ingredients": [
+    { "id": "sos", "name": "Sos" },
+    { "id": "ser", "name": "Ser" },
+    { "id": "pieczarki", "name": "Pieczarki" },
+    { "id": "szynka", "name": "Szynka" },
+    { "id": "salami", "name": "Salami" }
+  ],
+  "dishes": [
+    {
+      "id": "margherita",
+      "index": 0,
+      "name": "Margherita",
+      "ingredients": ["sos", "ser"],
+      "price": "22.50"
+    },
+    {
+      "id": "funghi",
+      "index": 0,
+      "name": "Funghi",
+      "ingredients": ["sos", "ser", "pieczarki"],
+      "price": "23.50"
+    },
+    {
+      "id": "capriciosa",
+      "index": 0,
+      "name": "Capriciosa",
+      "ingredients": ["sos", "ser", "pieczarki", "szynka"],
+      "price": "24.50"
+    }
+  ]
+}
