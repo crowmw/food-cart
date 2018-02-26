@@ -8,7 +8,7 @@ import './categories.css'
 import { fetchCategories } from '../../actions/categories/categories'
 import { getCategoriesList } from '../../selectors/category'
 
-class CategoriesComponent extends Component {
+class Categories extends Component {
   componentWillMount() {
     this.props.fetchCategories()
   }
@@ -16,13 +16,16 @@ class CategoriesComponent extends Component {
   render() {
     const { categories } = this.props
     return (
-      <div className="categories-component">
-        <ul>
-          {categories.map(category => (
-            <Category name={category.name} dishesCount={category.dishesCount} />
-          ))}
-        </ul>
-      </div>
+      <ul className="Categories">
+        {categories.map(category => (
+          <Category
+            key={category.id}
+            id={category.id}
+            name={category.name}
+            dishesCount={category.dishesCount}
+          />
+        ))}
+      </ul>
     )
   }
 }
@@ -42,4 +45,4 @@ const mapState = state => {
   }
 }
 
-export default connect(mapState, mapDispatch)(CategoriesComponent)
+export default connect(mapState, mapDispatch)(Categories)

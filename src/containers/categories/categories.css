@@ -1,8 +1,4 @@
-.categories-component {
-  margin-top: 84px;
-}
-
-.categories-component ul {
+.Categories {
+  margin-top: 84px 0 0 0;
   padding: 0 32px 0 50px;
-  margin: 0;
 }

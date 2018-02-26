@@ -2,6 +2,8 @@ import { createSelector } from 'reselect'
 
 export const getEntities = state => state.category.entities
 
+export const getEntity = (state, categoryKey) => state.category.entities[categoryKey]
+
 //MEMOIZED
 
 export const getCategoriesList = createSelector(getEntities, categories => {

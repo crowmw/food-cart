@@ -6,12 +6,12 @@
       "name": "Pizza",
       "dishes": ["margherita", "funghi", "capriciosa"]
     },
-    { "id": "sosy", "index": 1, "name": "Sosy", "dishes": [] },
-    { "id": "przystawki", "index": 2, "name": "Przystawki", "dishes": [] },
-    { "id": "zestawy-obiadowe", "index": 3, "name": "Zestawy obiadowe", "dishes": [] },
-    { "id": "fast-food", "index": 4, "name": "Fast food", "dishes": [] },
-    { "id": "spaghetti", "index": 5, "name": "Spaghetti", "dishes": [] },
-    { "id": "salatki", "index": 6, "name": "Sałatki", "dishes": [] },
+    { "id": "kebab", "index": 1, "name": "Kebab", "dishes": [] },
+    { "id": "burger", "index": 2, "name": "Burgery", "dishes": [] },
+    { "id": "spaghetti", "index": 3, "name": "Spaghetti", "dishes": [] },
+    { "id": "zapiekanki", "index": 4, "name": "Zapiekanki", "dishes": [] },
+    { "id": "salatki", "index": 5, "name": "Sałatki", "dishes": [] },
+    { "id": "dodatki", "index": 6, "name": "Dodatki", "dishes": [] },
     { "id": "napoje", "index": 7, "name": "Napoje", "dishes": [] }
   ],
   "ingredients": [
