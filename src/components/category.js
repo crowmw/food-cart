@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import './categoryComponentStyles.css'
+import './category.css'
 import PizzaIcon from '../assets/images/pizza_small.png'
 
 class CategoryComponent extends Component {

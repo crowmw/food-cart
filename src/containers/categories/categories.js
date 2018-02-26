@@ -2,11 +2,11 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 
-import CategoryComponent from '../../components/categoryComponent'
-import './categoriesComponentStyles.css'
+import Category from '../../components/category'
+import './categories.css'
 
-import { fetchCategories } from '../../actions/categoriesActions'
-import { getCategoriesList } from '../../selectors/categorySelector'
+import { fetchCategories } from '../../actions/categories/categories'
+import { getCategoriesList } from '../../selectors/category'
 
 class CategoriesComponent extends Component {
   componentWillMount() {
@@ -19,7 +19,7 @@ class CategoriesComponent extends Component {
       <div className="categories-component">
         <ul>
           {categories.map(category => (
-            <CategoryComponent name={category.name} dishesCount={category.dishesCount} />
+            <Category name={category.name} dishesCount={category.dishesCount} />
           ))}
         </ul>
       </div>

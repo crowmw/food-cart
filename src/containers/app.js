@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import SwipeableViews from 'react-swipeable-views'
 import './app.css'
 // import Topbar from './topbar/topbarComponent'
-import Categories from './categories/categoriesComponent'
+import Categories from './categories/categories'
 
 const RedView = () => <div style={{ height: 300, backgroundColor: 'red' }}>Red</div>
 const BlueView = () => <div style={{ height: 300, backgroundColor: 'blue' }}>Blue</div>
@@ -23,7 +23,7 @@ class App extends Component {
             <Link to="/red">Red</Link>
           </header>
           <div className="background-swipeable" />
-          <SwipeableViews preventNext={true} containerStyle={{ height: '100%' }} preventNext={true}>
+          <SwipeableViews preventNext={true} containerStyle={{ height: '100%' }}>
             <Route path="/" component={Categories} />
             <Route path="/blue" component={BlueView} />
             <Route path="/green" component={GreenView} />
