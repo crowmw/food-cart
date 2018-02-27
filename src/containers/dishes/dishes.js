@@ -6,21 +6,38 @@ import { makeGetCategoryEntities } from '../../selectors/dishes'
 
 import { fetchCategoryDishes } from '../../actions/categories/categories'
 
+import Dish from '../../components/dish/dish'
+
+import './dishes.css'
+
 class Dishes extends Component {
   componentWillMount() {
     this.props.fetchCategoryDishes(this.props.match.params.category)
   }
 
   render() {
-    const { dishes } = this.props
+    const { dishes, match } = this.props
     console.log(dishes)
     return (
-      <ul className="Dishes">
-        {dishes &&
-          dishes.map((dish, index) => {
-            return <li key={dish.id}>{dish.name}</li>
-          })}
-      </ul>
+      <div className="Dishes">
+        <h2 className="dishes-header">{`${match.params.category} menu`}</h2>
+        <ul className="dishes-list">
+          {dishes &&
+            dishes.map((dish, index) => {
+              return (
+                <Dish
+                  key={dish.id}
+                  name={dish.name}
+                  description={dish.description}
+                  weight={dish.weight}
+                  price={dish.price}
+                  stars={dish.stars}
+                  ingredients={dish.ingredients}
+                />
+              )
+            })}
+        </ul>
+      </div>
     )
   }
 }

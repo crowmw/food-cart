@@ -1,0 +1,102 @@
+.Dish {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  border-radius: 20px;
+  box-shadow: 0px 4px 6px 0px hsla(0, 0%, 0%, 0.2);
+  margin-bottom: 24px;
+  background: white;
+  width: 100%;
+}
+
+.fold-and-fade-description-enter {
+  opacity: 0.01;
+  max-height: 0px;
+}
+
+.fold-and-fade-description-enter.fold-and-fade-description-enter-active {
+  opacity: 1;
+  transition: all 300ms ease-in;
+  max-height: 400px;
+}
+
+.fold-and-fade-description-exit {
+  opacity: 1;
+  max-height: 400px;
+}
+
+.fold-and-fade-description-exit.fold-and-fade-description-exit-active {
+  opacity: 0.01;
+  transition: all 300ms ease-in;
+  max-height: 0px;
+}
+
+.Dish.expanded {
+  max-height: 500px;
+}
+
+.dish-name {
+  font-weight: 600;
+}
+
+.dish-description {
+  text-align: left;
+}
+
+.dish-ingredients {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 200px;
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.dish-footer {
+  margin-top: 12px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.dish-weight {
+  color: hsla(0, 0%, 0%, 0.5);
+}
+
+.dish-price {
+  font-weight: 600;
+  color: #ed394d;
+}
+
+.dish-icon {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  margin-left: -2rem;
+  box-shadow: 0px 4px 6px 0px hsla(0, 0%, 0%, 0.2);
+}
+
+.dish-content {
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-flow: column;
+  margin: 16px;
+  height: 100%;
+}
+
+.Dish .circle {
+  box-shadow: 0px 4px 6px 0px hsla(0, 0%, 0%, 0.2);
+  border-radius: 50%;
+  flex-shrink: 0;
+  flex-grow: 0;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: -1rem;
+  background: white;
+  font-weight: 600;
+  color: #ed394d;
+}

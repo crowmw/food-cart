@@ -26,6 +26,10 @@
       "id": "margherita",
       "index": 0,
       "name": "Margherita",
+      "description":
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu ornare massa, a placerat quam. Nam vehicula ligula sit amet ultricies pulvinar. Quisque et ante id est placerat ullamcorper.",
+      "stars": "4",
+      "weight": 300,
       "ingredients": ["sos", "ser"],
       "price": "22.50"
     },
@@ -33,6 +37,10 @@
       "id": "funghi",
       "index": 0,
       "name": "Funghi",
+      "description":
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu ornare massa, a placerat quam. Nam vehicula ligula sit amet ultricies pulvinar. Quisque et ante id est placerat ullamcorper.",
+      "stars": "3",
+      "weight": 400,
       "ingredients": ["sos", "ser", "pieczarki"],
       "price": "23.50"
     },
@@ -40,6 +48,10 @@
       "id": "capriciosa",
       "index": 0,
       "name": "Capriciosa",
+      "description":
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu ornare massa, a placerat quam. Nam vehicula ligula sit amet ultricies pulvinar. Quisque et ante id est placerat ullamcorper.",
+      "stars": "5",
+      "weight": 250,
       "ingredients": ["sos", "ser", "pieczarki", "szynka"],
       "price": "24.50"
     }

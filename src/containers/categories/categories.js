@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 
-import Category from '../../components/category'
+import Category from '../../components/category/category'
 import './categories.css'
 
 import { fetchCategories } from '../../actions/categories/categories'

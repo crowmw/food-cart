@@ -1,0 +1,21 @@
+.fold-and-fade-enter {
+  opacity: 0.01;
+  max-height: 0px;
+}
+
+.fold-and-fade-enter.fold-and-fade-enter-active {
+  opacity: 1;
+  transition: all 300ms ease-in;
+  max-height: 400px;
+}
+
+.fold-and-fade-exit {
+  opacity: 1;
+  max-height: 400px;
+}
+
+.fold-and-fade-exit.fold-and-fade-exit-active {
+  opacity: 0.01;
+  transition: all 300ms ease-in;
+  max-height: 0px;
+}
